@@ -8,6 +8,6 @@ The following plot created using `RitzPlot.py` python file in this repository is
 
 ![Alt text](./Img/RitzPlot.png)
 
-The following plot created using `ThreadsTimePlot.py` file in this repository is the visualization of the wall clock time as a function of number of threads in computing pi using parallel programming discussed in this [blog]().
+The following plot created using `ThreadsTimePlot.py` file in this repository is the visualization of the wall clock time as a function of number of threads in computing pi using parallel programming discussed in this [blog](https://medium.com/@SourenAM/parallel-programming-the-art-of-multi-tasking-by-computers-90f7c3b9682e).
 
 ![Alt text](./Img/ThreadsTimePlot.png)
