@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{adjustbox}
+\usepackage{algorithm2e}
+
+\begin{document}
+\begin{table}
+\centering
+\begin{adjustbox}{width=\textwidth}
+\begin{tabular}{l} 
+\hline
+\textsc{Parallel Algorithm: Compute $\pi$}\\
+\hline\hline 
+{\normalsize \textit{Input: N}\ - number of sub-intervals on interval [0, 1]}\\ 
+
+\begin{algorithm}[H]
+{\small Get my ID and the number of cooperating processes $p$}\\ 
+{\small Master broadcast $N$ to all processes}\\
+{\small Compute a shorter \textbf{for} loop:}\\  
+\For{$j = 1 \cdots N/p$}{
+    $x_j=(1/N)(j-0.5)$\;
+    $y_j=\sqrt{1-x_j ^2}$\;
+    $Pj = Pj + 4(y_j/N)$\;
+}
+{\small Master reduce partial sums $Pj$ to the final result $Pi$}\\
+\end{algorithm}\\
+{\normalsize \textit{Output: $Pi$}\ - an approximation for the number $\pi$}\\ 
+\hline
+\end{tabular}
+\end{adjustbox}
+%\caption{Algorithm to compute $\pi$}
+\label{tab:pi_algorithm}
+\end{table}
+
+\end{document}
